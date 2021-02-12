@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+	<style>
+		html { overflow-y: scroll; overflow-x:hidden; }
+		.navbar-brand{
+			background-image: url("images/implode.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+			width: 300px;
+			height: 70px;
+			padding: 0px;
+		}
+		#imgholder{
+			background-image: url('images/repeating.jpg');
+			width: 100%;
+			height: 300px;
+			padding: 0px;
+			position: relative;
+			z-index: -99;
+
+		}
+		.layer{
+			z-index: -9;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.5;	
+			background-color: #000;
+		}
+		
+
+	</style>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #1c242c;">
+		<a class="navbar-brand" href="index.html"></a>
+		
+	</nav>
+	<div id="imgholder" style="margin-top: 80px;">
+		<div class="layer"></div>
+		<div class="container text-center">
+			<h1 style="position:relative;top:100px;color:#fff;text-shadow: 2px 2px black;">Request a Demo here</h1>
+			<p style="position:relative;top:100px;color:#fff;text-shadow: 2px 2px black;">Your info isn't actually sent to us because i'm lazy.</p>
+		</div>
+	</div>
+
+	<div class="container main">
+		<form>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <label for="nameInput">Name</label>
+		      <input type="text" class="form-control" id="nameInput" placeholder="Email">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <label for="inputEmail4">Email</label>
+		      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+		    </div>
+		
+		  </div>
+		 
+		  <div class="form-row">
+		    <div class="form-group col-md-12">
+		      <label for="inputCity">Message</label>
+		      <textarea class="form-control" cols="30" rows="10"></textarea>
+		    </div>
+		   
+		  </div>
+		 
+		  <button type="submit" style="margin-left:calc(100% - 110px);" class="btn btn-primary">Submit Info</button>
+		</form>
+	</div>
+
+	<footer style="background-color:#161616; color:#fff; bottom: 0; position: absolute; width: 100%;">
+		<div class="container text-center">
+			<h3 class="p-4">Thanks for visiting</h3>
+		</div>
+		<p class=" text-center m-0 p-2">Copyright 2021 - Implode™ by Styx</p>
+	</footer>
+</body>
+
+</html>

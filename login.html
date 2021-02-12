@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+	<style>
+		html { overflow-y: scroll; overflow-x:hidden; }
+		.navbar-brand{
+			background-image: url("images/implode.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+			width: 300px;
+			height: 70px;
+			padding: 0px;
+		}
+		.nav-link:not(.Demobtn){
+			margin-right: 30px;
+			font-weight: 500;
+			font-size: 30px;
+			color: #cdcdcd !important;
+		}
+		.nav-link:hover{
+			color:#fff !important;
+		}
+		.Demobtn{
+			font-weight: 500;
+			font-size: 30px;
+		}
+		
+
+		body{
+			background-color: #303f4f;
+		}
+		.loginCard{
+			width:500px; 
+			background-color:#fff;
+			border-radius:10px;
+			margin-top: 250px;
+		}
+
+	</style>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #1c242c;">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav" style="margin-left:auto;">
+				<li class="nav-item active">
+					<a class="nav-link active" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Login</a>
+				</li>
+				<li class="nav-item" style="margin-right: 100px;">
+					<button class="btn btn-info btn-sm mt-1"><a class="nav-link active p-0 Demobtn" href="contact.html">Request Demo</a></button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container main" style="margin-top: 80px;">
+		<div class="container loginCard text-center p-5">
+			<h1>Log in to implode</h1>
+			<p>Username=user Pass=Hello123</p>
+			<p id="errormsg" style="display:none; color:red;">Something went wrong...Check details</p>
+
+			<div class="form-group col-md-12">
+				<label for="userInput">Username</label>
+				<input type="text" class="form-control" id="userInput" placeholder="Email">
+			</div>
+
+			<div class="form-group col-md-12">
+				<label for="passInput">Password</label>
+				<input type="password" class="form-control" id="passInput" placeholder="Password">
+			</div>
+
+			<button class="btn btn-success sub">Sign in</button>
+
+		</div>
+	</div>
+	<footer style="background-color:#161616; color:#fff; bottom: 0; position: absolute; width: 100%;">
+		<div class="container text-center">
+			<h3 class="p-4">Thanks for visiting</h3>
+		</div>
+		<p class=" text-center m-0 p-2">Copyright 2021 - Implode™ by Styx</p>
+	</footer>
+</body>
+<script>
+
+
+	$(".sub").on("click",function(){
+		if ($("#userInput").val().toLowerCase() == "user" && $("#passInput").val() == "Hello123"){
+			document.cookie = "login=Yes";
+			$("#errormsg").css("display","none");
+			alert("Successfully logged in! Redirecting..")
+			window.location.href = "index.html";
+		}
+		else{
+			$("#errormsg").css("display","block");
+		}
+	})
+</script>
+</html>

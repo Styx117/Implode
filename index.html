@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+	<style>
+		html { overflow-y: scroll; overflow-x:hidden; }
+		.navbar-brand{
+			background-image: url("images/implode.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center center;
+			width: 300px;
+			height: 70px;
+			padding: 0px;
+		}
+		.mainBG{
+			background-image: url("images/bg.jpg");
+			/*background-repeat: no-repeat;*/
+			background-size: contain;
+			background-position: center center;
+			width: 100%;
+			height: 700px;
+			position: relative;
+			z-index: -99;
+		}
+		.layer{
+			z-index: -9;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.7;	
+			background-color: #000;
+		}
+
+		.nav-link:not(.Demobtn){
+			margin-right: 30px;
+			font-weight: 500;
+			font-size: 30px;
+			color: #cdcdcd !important;
+		}
+		.nav-link:hover{
+			color:#fff !important;
+		}
+		.Demobtn{
+			font-weight: 500;
+			font-size: 30px;
+		}
+		.welcome{
+			padding: 100px;
+			width: 800px;
+		}
+
+
+	</style>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #1c242c;">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav" style="margin-left:auto;">
+				<li class="nav-item active">
+					<a class="nav-link active" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="login nav-link active" href="login.html">Login</a>
+				</li>
+				<li class="nav-item" style="margin-right: 100px;">
+					<button class="btn btn-info btn-sm mt-1"><a class="nav-link active p-0 Demobtn" href="contact.html">Request Demo</a></button>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="main" style="margin-top: 80px;">
+		<div class="mainBG">
+			<div class="layer"></div>
+			<div class="welcome">
+				<h1 id="WelcomeMsg" style="color:#fff;"></h1>
+				<h4 style="color: #00ff7e;font-weight: 700;">This is Implode. A lightweight JS plugin/library that is currently in development stages and doesn't exist.</h4>
+			</div>
+		</div>
+		<div class="container text-center">
+			<h1 style="color: #676767;padding: 20px;text-transform: uppercase;font-weight: 400;font-size: 30px;}">Trusted companies that have nothing to do with this</h1>
+		</div>
+		<div class="row text-center p-4" style="border-bottom:1px solid #cdcdcd;">
+			<div class="col"><img src="images/fb.svg" width="200"></div>
+			<div class="col"><img src="images/hp.svg" width="200"></div>
+			<div class="col"><img src="images/wp.svg" width="100"></div>
+			<div class="col"><img src="images/bs.svg" width="100"></div>
+			<div class="col"><img src="images/io.svg" width="90"></div>
+			<div class="col"><img src="images/larv.svg" width="150"></div>
+			<div class="col"><img src="images/ang.svg" width="100"></div>
+		</div>
+		<div class="container text-center p-5">
+			<h1>Make your life easier with Implode</h1>
+		</div>
+		<div class="container">
+			<div class="row" style="margin-bottom:100px;">
+				<div class="col-md-6">
+					<h3>Timely responses from our dev team</h3>
+					<p>Once Implode has been released, there will be a FAQ available as well as a forum and organized documentation on how to use. Any requests or bug reports are welcomed and will be dealt with as quickly as possible. Seeing as i'm the only person <i>(not)</i> working on this project. You will have to be patient. </p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="images/time.png" width="400">
+				</div>
+			</div>
+
+
+
+
+			<div class="row" style="margin-bottom:100px;">
+				<div class="col-md-6 text-center">
+					<img src="images/cert.svg" width="250">
+				</div>
+
+				<div class="col-md-6">
+					<h3>Developed by certified Software engineers</h3>
+					<p>Now the person reading this may be thinking "wait...this dude is a student, theres no way he's certified" and you'd be right unless you count a fundamentals in web development Microsoft certificate as certified. But by the time this framework is completed, in around <strike><i>never</i></strike> years. I should have collected a few valid and eyebrow-raising certificates</p>
+				</div>
+			</div>
+
+
+
+
+			<div class="row" style="margin-bottom:100px;">
+				<div class="col-md-6">
+					<h3>You won't be dissapointed</h3>
+					<p>Use of Implode will no doubt increase your productivity as it is lightweight, easy to use, easy to understand and used by <strike>noone</strike> many developers. I'm running out of things to say so Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium animi non assumenda, saepe vitae laborum veniam qui nisi ullam fugit libero obcaecati placeat tempore at dignissimos maxime sit minus. Maiores?</p>
+				</div>
+				<div class="col-md-6 text-center">
+					<img src="images/stock.svg" width="300">
+				</div>
+			</div>
+
+
+		</div>
+		<div class="container text-center p-5">
+			<h1>Here are some testimonials</h1>
+		</div>
+		<div class="container text-center">
+			<div class="row mb-3">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="images/ducky.png" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">I have high hopes after being told about Implode and I am willing to invest my life savings into it....Noone threatened me to do this >.> </p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="images/reallyreal.png" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="images/real.png" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-text"><--- I'm pretty sure that means something good in Latin and so does this quasi ea tenetur mollitia ab porro deserunt error cumque vero enim sapiente, animi, ut reiciendis voluptates!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center p-5" style="background-color:#34495e;">
+			<h1 style="color:#fff">Ready to get started?</h1>
+			<button class="btn btn-info btn-sm"><a class="nav-link active mr-0" href="#">Request Demo</a></button>
+		</div>
+	</div>
+	<footer style="background-color:#161616; color:#fff;">
+		<div class="container text-center">
+			<h3 class="p-4">Thanks for visiting</h3>
+		</div>
+		<div class="row text-center p-5">
+			<div class="col">
+				<h4>Join</h4>
+				<p>These</p>
+				<p>Are</p>
+				<p>All</p>
+				<p>Fake</p>
+			</div>
+
+			<div class="col">
+				<h4>All</h4>
+				<p>Links</p>
+				<p>Because</p>
+				<p>I</p>
+			</div>
+
+			<div class="col">
+				<h4>Things</h4>
+				<p>Don't</p>
+				<p>Know</p>
+				<p>What</p>
+				<p>To</p>
+			</div>
+
+			<div class="col">
+				<h4>Web</h4>
+				<p>Put</p>
+				<p>Here</p>
+				<p>Lorem</p>
+				<p>Lorem</p>
+			</div>
+
+			<div class="col">
+				<h4>Development</h4>
+				<p>Lorem</p>
+				<p>Lorem</p>
+			</div>
+		</div>
+		<p class=" text-center m-0 p-2">Copyright 2021 - Implode™ by Styx</p>
+	</footer>
+
+	
+
+
+
+
+</body>
+<script>
+	function getCookie(name) {
+		const value = `; ${document.cookie}`;
+		const parts = value.split(`; ${name}=`);
+		if (parts.length === 2)
+			return parts
+		.pop()
+		.split(";")
+		.shift();
+	}
+	if (getCookie("login") == "Yes"){
+		$(".login").text("logout");
+		$(".login").on("click",function(){
+			document.cookie = "login=No";
+
+		});
+
+
+	}
+	var app = document.getElementById('WelcomeMsg');
+
+	var typewriter = new Typewriter(app, {
+		loop: false,
+		delay: 30
+	});
+
+	typewriter.typeString('Are you tired of headaches?')
+	.pauseFor(1500)
+	.deleteChars(10)
+	.typeString('complicated JS libraries?')
+	.pauseFor(1500)
+	.deleteChars(25)
+	.typeString('being unorganized?')
+	.pauseFor(1500)
+	.deleteChars(12)
+	.typeString('overworked?')
+	.pauseFor(1500)
+	.deleteAll()
+	.typeString('<strong> Try implode.</strong>')
+	.pauseFor(1500)
+	.start();
+
+</script>
+</html>
